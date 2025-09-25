@@ -1,9 +1,11 @@
 import turtle
 
+x = 120
+
 turtle.up()
-turtle.left(120)
+turtle.left(x)
 turtle.forward(250)
-turtle.right(120)
+turtle.right(x)
 turtle.down()
 
 def spiral(radius) :
@@ -15,9 +17,9 @@ def hexagon(size) :
         turtle.forward(size)
         turtle.right(360/6)
     turtle.up()
-    turtle.left(120)
+    turtle.left(x)
     turtle.forward(10)
-    turtle.right(120)
+    turtle.right(x)
     turtle.down()
 
 for j in range(6) :
@@ -25,11 +27,11 @@ for j in range(6) :
         turtle.left(60)
         turtle.forward(40)
         turtle.backward(40)
-        turtle.right(120)
+        turtle.right(x)
 turtle.up()
-turtle.left(120)
+turtle.left(x)
 turtle.forward(10)
-turtle.right(120)
+turtle.right(x)
 turtle.down()
 
 hexagon(260)
