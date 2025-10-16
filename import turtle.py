@@ -3,7 +3,9 @@ import turtle
 x = 120
 y = 10
 
+
 turtle.up()
+turtle.goto(0,0)
 turtle.left(x)
 turtle.forward(250)
 turtle.right(x)
@@ -35,12 +37,17 @@ turtle.forward(y)
 turtle.right(x)
 turtle.down()
 
+a = turtle.position()
 hexagon(260)
+b = turtle.position()
 hexagon(270)
+c = turtle.position()
 hexagon(280)
+d = turtle.position()
 hexagon(290)
+e = turtle.position()
 
-turtle.right(y*6)
+turtle.right(60)
 turtle.up()
 turtle.forward(350)
 turtle.down()
@@ -69,11 +76,11 @@ for k in range (40, 0, -5) :
     spiral(k)
 
 
-turtle.left(y*9)
+turtle.left(90)
 turtle.up()
-turtle.forward(y*20)
-turtle.left(y*9)
-turtle.forward(y*3)
+turtle.forward(200)
+turtle.left(90)
+turtle.forward(30)
 turtle.down()
 
 def fufd ():
@@ -84,5 +91,12 @@ def fufd ():
 
 fufd()
 fufd()
+
+turtle.up()
+turtle.goto(e)
+turtle.down()
+
+turtle.right(25)
+turtle.forward(30)
 
 turtle.exitonclick()
