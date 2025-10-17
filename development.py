@@ -84,7 +84,8 @@ turtle.forward(30)
 turtle.down()
 
 def fufd ():
-    turtle.forward(5)
+    turtle.dot()
+    # turtle.forward(5)
     turtle.up()
     turtle.forward(45)
     turtle.down()
